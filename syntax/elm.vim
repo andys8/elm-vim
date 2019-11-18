@@ -12,7 +12,12 @@ syn keyword elmImport exposing as import module where
 syn keyword elmImport contained exposing as import module where
 
 " Operators
-syn match elmOperator contained "\([-!#$%`&\*\+./<=>\?@\\^|~:]\|\<_\>\)"
+" elm/core
+syn match elmOperator contained "\(<|\||>\|||\|&&\|==\|/=\|<=\|>=\|++\|::\|+\|-\|*\|/\|//\|^\|<>\|>>\|<<\|<\|>\|%\)"
+" elm/parser
+syn match elmOperator contained "\(|.\||=\)"
+" elm/url
+syn match elmOperator contained "\(</>\|<?>\)"
 
 " Types
 syn match elmType "\<[A-Z][0-9A-Za-z_-]*"
