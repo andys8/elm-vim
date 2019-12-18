@@ -7,8 +7,7 @@ endif
 " Keywords
 syn keyword elmConditional else if of then case
 syn keyword elmAlias alias
-syn keyword elmTypedef contained type port
-syn keyword elmImport exposing as import module where
+syn keyword elmTypedef type port let in
 syn keyword elmImport contained exposing as import module where
 
 " Operators
@@ -57,8 +56,8 @@ syn match elmInt "-\?\<\d\+\>"
 syn match elmFloat "-\?\(\<\d\+\.\d\+\>\)"
 
 " Identifiers
-syn match elmTopLevelDecl "^\s*[a-zA-Z][a-zA-z0-9_]*\('\)*\s\+:\(\r\n\|\r\|\n\|\s\)\+" contains=elmOperator
-syn match elmFuncName /^\l\w*/
+syn match elmTopLevelDecl "^\s*[a-zA-Z][a-zA-z0-9_]*\('\)*\s\+:\s\+" contains=elmOperator
+" syn match elmFuncName /^\l\w*/
 
 " Folding
 syn region elmTopLevelTypedef start="type" end="\n\(\n\n\)\@=" contains=ALL fold
@@ -89,7 +88,7 @@ hi def link elmImport Include
 hi def link elmConditional Conditional
 hi def link elmAlias Delimiter
 hi def link elmOperator Operator
-hi def link elmType Type
+hi def link elmType Identifier
 hi def link elmNumberType Identifier
 hi def link elmLambdaFunc Function
 hi def link elmDebug Debug
