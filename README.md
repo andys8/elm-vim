@@ -18,6 +18,7 @@ Have a look at [elm-tooling/elm-vim](https://github.com/elm-tooling/elm-vim) for
 - Vundle: `Plugin 'andys8/vim-elm-syntax'`
 - NeoBundle: `NeoBundle 'andys8/vim-elm-syntax'`
 - Pathogen: `cd ~/.vim/bundle && git clone https://github.com/andys8/vim-elm-syntax`
+- Vim 8+: `git clone --depth 1 https://github.com/andys8/vim-elm-syntax.git ~/.vim/pack/git-plugins/start/vim-elm-syntax`
 
 ### Note about vim-polyglot
 
