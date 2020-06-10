@@ -2,6 +2,13 @@
 
 `vim-elm-syntax` _only_ provides syntax highlighting. Other functionality (like compiling code) is provided by [`elm-language-server`](https://github.com/elm-tooling/elm-language-server).
 
+## Important: Elm Syntax is included in Vim
+
+Starting with Vim 8.2 patch 929 `Elm` syntax is **part of `Vim`**. No need to install this plugin.
+
+- <https://github.com/vim/vim/blob/master/runtime/ftplugin/elm.vim>
+- <https://github.com/vim/vim/blob/master/runtime/syntax/elm.vim>
+
 ## Features
 
 1. Syntax highlighting
