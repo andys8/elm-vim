@@ -9,6 +9,14 @@ Starting with Vim 8.2 patch 929 `Elm` syntax is **part of `Vim`**. No need to in
 - <https://github.com/vim/vim/blob/master/runtime/ftplugin/elm.vim>
 - <https://github.com/vim/vim/blob/master/runtime/syntax/elm.vim>
 
+### Neovim support still missing
+
+Runtime files missing in NeoVim. Help wanted.
+
+See <https://github.com/andys8/vim-elm-syntax/issues/9>
+
+---
+
 ## Features
 
 1. Syntax highlighting
